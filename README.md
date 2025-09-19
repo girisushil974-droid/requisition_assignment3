@@ -1,0 +1,34 @@
+Overview
+Requisition System Requisition System can be defined as a Python program that is used to handle requisitions in an organization. 
+It can enable the staff to make requisitions, include items with cost-related information, automatically approve requests that are 
+less than a specific limit and request the manager to review the requests that exceed that limit. The system also records all the
+requisitions and provides summary statistics like the number of approved, pending and rejected requests. This program has been created
+in line with the major software design principles so it could be simple, maintainable, and efficient and comments have been made throughout 
+the program to enhance clarity and understanding.
+
+It is one of the concepts that are used in the system and it is referred to as KISS, which means Keep It Simple, Stupid. 
+The program makes sure that every method is carrying out one, clear cut task. One can take the example of the requisitions_details() method 
+which is only mandated to gather item information and compute the total cost with the requisition_approval() method deciding whether a requisition 
+is automatically approved or pending. The code is also more convenient to maintain, understand, and read because it is simple to operate. 
+The other principle that is utilized is YAGNI, or You Aren’t Gonna Need It. The system will only have features that are necessary in the existing requisition process. 
+It does not have any redundant features like database integration, web interfaces, or advanced reporting. The code is lightweight because 
+it only includes the necessary functionality, and the unnecessary work is avoided.
+
+
+The system is also based on the DRY principle that can be abbreviated as Don’t Repeat Yourself. 
+Encapsulation of repetition is performed in methods to prevent repetition. As an example, the display requisition() method is
+used to display requisition information of all entries rather than using multiple times the print statements. 
+Likewise, approvals logic is centralized in the responds_requisition() and requisition approval logic of requisition. 
+This would minimize chances of making mistakes, and it would be easy to update in future. Also, the system is based on the Single 
+Responsibility Principle because each method has its duty. The methods like requisitions details, requisition approval, respond requirements 
+and requisition statistic are each devoted to a single task. In this manner, the separation of responsibilities simplifies the program to debug, test and extend.
+The relevance of comments to this program is that they elaborate on what each section of the code does as well as the reasons why it is 
+being applied in the specific manner. Class-level comments are statements indicating the goal of the Requisitionsystem class and its attributes and 
+method-level comments articulate how each method works. The inline comments make it clear on certain lines where a global counter is used to make each 
+requisition ID unique. Commments make the code easier to read, easier to maintain as they give an explanation of the reasons behind certain decisions 
+and assist in debugging as they make the flow of data and logic more readable.
+
+Overall, the Requisition System proves the efficient use of software design principles KISS, YAGNI, DRY and Single Responsibility Principle. 
+The system can be maintained, scaled, and easy to use by being simple, avoiding any extraneous features, centralizing repetitive tasks, and distinctly separating 
+roles and duties. The fact that the comprehensive comments are added also enhances clarity and makes the code accessible to make changes in the future. 
+These practices combined together form a strong and effective system that can be used to handle requisitions within an organization.
